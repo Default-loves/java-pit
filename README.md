@@ -1,2 +1,3 @@
-# java-pit
-java pit, or java trap in programming
+通过代码的方式展示常见的Java编程的坑(Pit)：
+
+1. 

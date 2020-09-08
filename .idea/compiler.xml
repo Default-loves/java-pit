@@ -2,27 +2,69 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="nullvalue" />
+        <module name="exception" />
         <module name="thread-local" />
-        <module name="copy-on-write-array-list" />
+        <module name="executor-pool" />
+        <module name="tx" />
         <module name="concurrent-hashmap" />
+        <module name="lst" />
+        <module name="equal" />
+        <module name="numerical" />
+        <module name="copy-on-write-array-list" />
+        <module name="util" />
+        <module name="connection-pool" />
+        <module name="lock" />
+        <module name="http" />
+        <module name="logging" />
+        <module name="id" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="concurrent-hashmap" target="1.8" />
+      <module name="connection-pool" target="1.8" />
       <module name="copy-on-write-array-list" target="1.8" />
+      <module name="equal" target="1.8" />
+      <module name="exception" target="1.8" />
+      <module name="executor-pool" target="1.8" />
+      <module name="http" target="1.8" />
+      <module name="id" target="1.8" />
+      <module name="liar" target="1.8" />
+      <module name="lock" target="1.8" />
+      <module name="logging" target="1.8" />
+      <module name="lst" target="1.8" />
+      <module name="nullvalue" target="1.8" />
+      <module name="numerical" target="1.8" />
       <module name="ProgramPit" target="1.8" />
       <module name="thread-local" target="1.8" />
+      <module name="tx" target="1.8" />
+      <module name="util" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="concurrent-hashmap" options="-parameters" />
+      <module name="connection-pool" options="-parameters" />
       <module name="copy-on-write-array-list" options="-parameters" />
+      <module name="equal" options="-parameters" />
+      <module name="exception" options="-parameters" />
+      <module name="executor-pool" options="-parameters" />
+      <module name="http" options="-parameters" />
+      <module name="id" options="-parameters" />
+      <module name="liar" options="-parameters" />
+      <module name="lock" options="-parameters" />
+      <module name="logging" options="-parameters" />
+      <module name="lst" options="-parameters" />
+      <module name="nullvalue" options="-parameters" />
+      <module name="numerical" options="-parameters" />
       <module name="thread-local" options="-parameters" />
+      <module name="tx" options="-parameters" />
+      <module name="util" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <appender name="CONSOLE" class="com.junyi.logging.async.MySlowAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%thread] [%-5level] [%logger{40}:%line] - %msg%n</pattern>
+		</layout>
+	</appender>
+	<appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+		<appender-ref ref="CONSOLE" />
+        <includeCallerData>true</includeCallerData>
+        <!--		<discardingThreshold>200</discardingThreshold>-->
+        <!--		<queueSize>1000</queueSize>-->
+        <!--		<neverBlock>true</neverBlock>-->
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="ASYNC" />
+	</root>
+</configuration>
+<!--
+AsyncAppender的参数说明：
+includeCallerData 用于控制是否收集调用方数据，默认是 false，此时方法行号、方法名等信息将不能显示（源码第 2 行以及 7 到 11 行）。
+queueSize 用于控制阻塞队列大小，使用的 ArrayBlockingQueue 阻塞队列（源码第 15 到 17 行），默认大小是 256，即内存中最多保存 256 条日志。
+discardingThreshold 是控制丢弃日志的阈值，主要是防止队列满后阻塞。默认情况下，队列剩余量低于队列长度的 20%，就会丢弃 TRACE、DEBUG 和 INFO 级别的日志。（参见源码第 3 到 6 行、18 到 19 行、26 到 27 行、33 到 34 行、40 到 42 行）
+neverBlock 用于控制队列满的时候，加入的数据是否直接丢弃，不会阻塞等待，默认是 false（源码第 44 到 68 行）。这里需要注意一下 offer 方法和 put 方法的区别，当队列满的时候 offer 方法不阻塞，而 put 方法会阻塞；neverBlock 为 true 时，使用 offer 方法。
+因此默认情况下，默认队列大小为 256，达到 80% 容量后开始丢弃 <=INFO 级别的日志
+
+使用建议：
+如果考虑绝对性能为先，那就设置 neverBlock 为 true，永不阻塞。
+如果考虑绝对不丢数据为先，那就设置 discardingThreshold 为 0，即使是 <=INFO 的级别日志也不会丢，但最好把 queueSize 设置大一点，毕竟默认的 queueSize 显然太小，太容易阻塞。
+如果希望兼顾两者，可以丢弃不重要的日志，把 queueSize 设置大一点，再设置一个合理的 discardingThreshold。
+-->

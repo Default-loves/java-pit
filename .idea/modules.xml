@@ -11,12 +11,13 @@
       <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/executor-pool/executor-pool.iml" filepath="$PROJECT_DIR$/executor-pool/executor-pool.iml" />
       <module fileurl="file://$PROJECT_DIR$/http/http.iml" filepath="$PROJECT_DIR$/http/http.iml" />
-      <module fileurl="file://$PROJECT_DIR$/id/id.iml" filepath="$PROJECT_DIR$/id/id.iml" />
+      <module fileurl="file://$PROJECT_DIR$/io/io.iml" filepath="$PROJECT_DIR$/io/io.iml" />
       <module fileurl="file://$PROJECT_DIR$/lock/lock.iml" filepath="$PROJECT_DIR$/lock/lock.iml" />
       <module fileurl="file://$PROJECT_DIR$/logging/logging.iml" filepath="$PROJECT_DIR$/logging/logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/lst/lst.iml" filepath="$PROJECT_DIR$/lst/lst.iml" />
       <module fileurl="file://$PROJECT_DIR$/nullvalue/nullvalue.iml" filepath="$PROJECT_DIR$/nullvalue/nullvalue.iml" />
       <module fileurl="file://$PROJECT_DIR$/numerical/numerical.iml" filepath="$PROJECT_DIR$/numerical/numerical.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread-local/thread-local.iml" filepath="$PROJECT_DIR$/thread-local/thread-local.iml" />
       <module fileurl="file://$PROJECT_DIR$/tx/tx.iml" filepath="$PROJECT_DIR$/tx/tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />

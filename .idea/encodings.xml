@@ -8,12 +8,13 @@
     <file url="file://$PROJECT_DIR$/exception/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/executor-pool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/http/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/id/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/io/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lock/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/logging/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lst/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nullvalue/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/numerical/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serialization/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/thread-local/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tx/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/util/src/main/java" charset="UTF-8" />

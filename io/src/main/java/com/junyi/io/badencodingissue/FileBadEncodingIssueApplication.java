@@ -72,6 +72,7 @@ public class FileBadEncodingIssueApplication {
 
     /**
      * 简洁的做法
+     * 不过，readAllLines这个方法是一次性读取所有的数据到内存，文件大的时候不适合，而应该使用 Files.lines
      */
     private static void right2() throws IOException {
         System.out.println("===right2====");

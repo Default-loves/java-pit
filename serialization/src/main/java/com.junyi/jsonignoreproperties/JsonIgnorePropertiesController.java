@@ -16,9 +16,14 @@ public class JsonIgnorePropertiesController {
 
     @GetMapping("test")
     public void test() throws JsonProcessingException {
+        // 默认情况下是输出：“BLUE“
         log.info("color:{}", objectMapper.writeValueAsString(Color.BLUE));
     }
 
+    /**
+     * UserWrong中只有一个name字段，如果传入不存在的字段，Spring Web的ObjectMapper会忽略未知字段，如果自定义了 ObjectMapper Bean，
+     * 导致覆盖了 Spring Web的Objectmapper，则对未知字段会报错
+     */
     @PostMapping("wrong")
     public UserWrong wrong(@RequestBody UserWrong user) {
         return user;

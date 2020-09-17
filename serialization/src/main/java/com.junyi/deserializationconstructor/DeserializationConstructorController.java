@@ -8,12 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 默认情况下，在反序列化的时候，Jackson 框架只会调用无参构造方法创建对象。
+ * wrong 方法 success字段总是 false
+ */
 @RestController
 @RequestMapping("deserializationconstructor")
 @Slf4j
 public class DeserializationConstructorController {
     @Autowired
     ObjectMapper objectMapper;
+
 
     @GetMapping("wrong")
     public void wrong() throws JsonProcessingException {

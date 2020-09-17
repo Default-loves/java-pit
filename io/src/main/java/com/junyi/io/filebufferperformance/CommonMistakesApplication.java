@@ -94,7 +94,7 @@ public class CommonMistakesApplication {
     }
 
     /**
-     * 没有额外的缓冲区，第四快
+     * 使用BufferedInputStream，其自带了缓冲区，没有使用额外的缓冲区，第四快
      */
     private static void bufferedStreamByteOperation() throws IOException {
         Files.deleteIfExists(Paths.get("dest.txt"));

@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
 
+/**
+ * RedisTemplate 和 StringRedisTemplate 保存的数据无法通用，它们需要读取自己存的数据
+ */
+
 @RestController
 @RequestMapping("redistemplate")
 @Slf4j
@@ -37,14 +41,19 @@ public class RedisTemplateController {
 
     @GetMapping("wrong")
     public void wrong() {
+        // 得到的都是 null
+        // RedisTemplate 和 StringRedisTemplate 保存的数据无法通用，它们需要读取自己存的数据
         log.info("redisTemplate get {}", redisTemplate.opsForValue().get("stringRedisTemplate"));
         log.info("stringRedisTemplate get {}", stringRedisTemplate.opsForValue().get("redisTemplate"));
     }
 
     @GetMapping("right")
     public void right() throws JsonProcessingException {
+        //使用RedisTemplate获取Value，无需反序列化就可以拿到实际对象，虽然方便，但是Redis中保存的Key和Value不易读
         User userFromRedisTemplate = (User) redisTemplate.opsForValue().get("redisTemplate");
         log.info("redisTemplate get {}", userFromRedisTemplate);
+
+        //使用StringRedisTemplate，虽然Key正常，但是Value存取需要手动序列化成字符串
         User userFromStringRedisTemplate = objectMapper.readValue(stringRedisTemplate.opsForValue().get("stringRedisTemplate"), User.class);
         log.info("stringRedisTemplate get {}", userFromStringRedisTemplate);
     }
@@ -69,6 +78,7 @@ public class RedisTemplateController {
         Long l2 = getLongFromRedis(key);
         log.info("{} {}", l1, l2);
     }
+
 
     private Long getLongFromRedis(String key) {
         Object o = countRedisTemplate.opsForValue().get(key);

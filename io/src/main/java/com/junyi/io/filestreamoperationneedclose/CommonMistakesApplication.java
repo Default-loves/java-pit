@@ -52,12 +52,15 @@ public class CommonMistakesApplication {
      */
     private static void linesTest() throws IOException {
         StopWatch stopWatch = new StopWatch();
+
         stopWatch.start("read 200000 lines");
         log.info("lines {}", Files.lines(Paths.get("large.txt")).limit(200000).collect(Collectors.toList()).size());
         stopWatch.stop();
+
         stopWatch.start("read 2000000 lines");
         log.info("lines {}", Files.lines(Paths.get("large.txt")).limit(2000000).collect(Collectors.toList()).size());
         stopWatch.stop();
+
         log.info(stopWatch.prettyPrint());
     }
 

@@ -14,57 +14,6 @@ import java.util.stream.Stream;
  */
 public class aaa {
 
-    private static final int target = 24;
-    private static final double E = 1e-6;
-    enum Opr {
-        ADD(0, "ADD"),
-        SUBTRACT(1, "SUBTRACT"),
-        MULTIPLY(2, "MULTIPLY"),
-        DIVIDE(3, "DIVIDE");
-
-        private int index;
-        private String name;
-
-        Opr(int index, String name) {
-            this.index = index;
-            this.name = name;
-        }
-
-        public int getIndex() {
-            return index;
-        }
-
-        public String getName() {
-            return name;
-        }
-    }
-
-    public boolean judgePoint24(int[] nums) {
-        ArrayList<Double> res = new ArrayList<>();
-        Arrays.stream(nums).forEach(k -> res.add((double) k));
-        return f(res);
-    }
-
-    private boolean f(ArrayList<Double> list) {
-        if (list.size() == 1) {
-            return (list.get(0) - target) < E;
-        }
-        for (int i = 0; i < list.size(); i++) {
-             for (int j = i+1; j < list.size(); j++) {
-                 ArrayList<Double> cList = new ArrayList<>();
-                 IntStream.range(0, list.size()).filter(index -> index!=i && index!=j)
-                         .forEach(k -> cList.add(list.get(k)));
-                 for (int k = 0; k < 4; k++) {
-                      = array[k];
-
-                 }
-
-             }
-
-
-        }
-
-    }
 
 
     public static void main(String[] args) {

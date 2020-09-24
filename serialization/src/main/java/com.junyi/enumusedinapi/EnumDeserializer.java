@@ -13,6 +13,9 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.Optional;
 
+/**
+ * custom deserializer which use to solve Enum problem
+ */
 class EnumDeserializer extends JsonDeserializer<Enum> implements
         ContextualDeserializer {
 

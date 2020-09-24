@@ -35,8 +35,8 @@ public class RedisTemplateController {
 
     @PostConstruct
     public void init() throws JsonProcessingException {
-        redisTemplate.opsForValue().set("redisTemplate", new User("zhuye", 36));
-        stringRedisTemplate.opsForValue().set("stringRedisTemplate", objectMapper.writeValueAsString(new User("zhuye", 36)));
+        redisTemplate.opsForValue().set("redisTemplate", new User("xujunyi", 18));
+        stringRedisTemplate.opsForValue().set("stringRedisTemplate", objectMapper.writeValueAsString(new User("xujunyi", 18)));
     }
 
     @GetMapping("wrong")
@@ -60,7 +60,7 @@ public class RedisTemplateController {
 
     @GetMapping("right2")
     public void right2() {
-        User user = new User("zhuye", 36);
+        User user = new User("xujunyi", 18);
         userRedisTemplate.opsForValue().set(user.getName(), user);
         User userFromRedis = userRedisTemplate.opsForValue().get(user.getName());
         log.info("userRedisTemplate get {} {}", userFromRedis, userFromRedis.getClass());

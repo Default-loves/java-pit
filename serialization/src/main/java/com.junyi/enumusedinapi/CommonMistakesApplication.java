@@ -18,6 +18,7 @@ public class CommonMistakesApplication {
         SpringApplication.run(CommonMistakesApplication.class, args);
     }
 
+    /** support using enum default value when deserialize */
     @Bean
     public RestTemplate restTemplate(MappingJackson2HttpMessageConverter mappingJackson2HttpMessageConverter) {
         return new RestTemplateBuilder()
@@ -25,6 +26,7 @@ public class CommonMistakesApplication {
                 .build();
     }
 
+    /** add costom EnumDeserializer */
     @Bean
     public Module enumModule() {
         SimpleModule module = new SimpleModule();

@@ -31,6 +31,8 @@
         <module>logging</module>
         <module>io</module>
         <module>serialization</module>
+        <module>untitled</module>
+        <module>datetime</module>
     </modules>
 
     <dependencies>

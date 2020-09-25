@@ -11,6 +11,9 @@ import java.util.concurrent.ThreadLocalRandom;
 import static java.time.temporal.ChronoField.DAY_OF_MONTH;
 import static java.time.temporal.ChronoField.MONTH_OF_YEAR;
 
+/**
+ * Date time calculation
+ */
 public class CommonMistakesApplication {
 
     public static void main(String[] args) throws Exception {
@@ -21,7 +24,9 @@ public class CommonMistakesApplication {
         test();
     }
 
+    /** int value had overflow */
     private static void wrong1() {
+        System.out.println("===========");
         System.out.println("wrong1");
         Date today = new Date();
         Date nextMonth = new Date(today.getTime() + 30 * 1000 * 60 * 60 * 24);
@@ -29,7 +34,9 @@ public class CommonMistakesApplication {
         System.out.println(nextMonth);
     }
 
+    /** use long type */
     private static void wrong1fix() {
+        System.out.println("===========");
         System.out.println(30 * 1000 * 60 * 60 * 24 + " " + (30L * 1000 * 60 * 60 * 24 > Integer.MAX_VALUE));
         System.out.println("wrong1fix");
         Date today = new Date();
@@ -39,7 +46,9 @@ public class CommonMistakesApplication {
 
     }
 
+    /** use java.util.Calendar */
     private static void right() {
+        System.out.println("===========");
         System.out.println("right");
         Calendar c = Calendar.getInstance();
         c.setTime(new Date());
@@ -47,13 +56,16 @@ public class CommonMistakesApplication {
         System.out.println(c.getTime());
     }
 
+    /** better to use java.time.LocalDateTime */
     private static void better() {
+        System.out.println("===========");
         System.out.println("better");
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println(localDateTime.plusDays(30));
     }
 
     private static void test() {
+        System.out.println("===========");
         System.out.println("//测试操作日期");
         System.out.println(LocalDate.now()
                 .minus(Period.ofDays(1))

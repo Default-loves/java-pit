@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="nullvalue" />
         <module name="exception" />
+        <module name="aaa" />
         <module name="thread-local" />
         <module name="executor-pool" />
         <module name="tx" />
@@ -28,6 +29,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aaa" target="1.8" />
       <module name="concurrent-hashmap" target="1.8" />
       <module name="connection-pool" target="1.8" />
       <module name="copy-on-write-array-list" target="1.8" />
@@ -54,6 +56,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aaa" options="-parameters" />
       <module name="concurrent-hashmap" options="-parameters" />
       <module name="connection-pool" options="-parameters" />
       <module name="copy-on-write-array-list" options="-parameters" />

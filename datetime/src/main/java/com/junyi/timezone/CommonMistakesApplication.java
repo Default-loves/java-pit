@@ -10,6 +10,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.TimeZone;
 
+/**
+ * About date time zone
+ */
 public class CommonMistakesApplication {
 
     public static void main(String[] args) throws Exception {
@@ -22,11 +25,13 @@ public class CommonMistakesApplication {
     private static void test() {
         System.out.println("test");
         System.out.println(new Date(0));
-        //System.out.println(TimeZone.getDefault().getID() + ":" + TimeZone.getDefault().getRawOffset()/3600/1000);
-        //ZoneId.getAvailableZoneIds().forEach(id -> System.out.println(String.format("%s:%s", id, ZonedDateTime.now(ZoneId.of(id)))));
+        System.out.println(new Date());
+        System.out.println(TimeZone.getDefault().getID() + ":" + TimeZone.getDefault().getRawOffset()/3600/1000);
+//        ZoneId.getAvailableZoneIds().forEach(id -> System.out.println(String.format("%s:%s", id, ZonedDateTime.now(ZoneId.of(id)))));
     }
 
 
+    /** the same date, different in each zone  */
     private static void wrong1() throws ParseException {
         System.out.println("wrong1");
         String stringDate = "2020-01-02 22:00:00";
@@ -38,6 +43,7 @@ public class CommonMistakesApplication {
         System.out.println(date2 + ":" + date2.getTime());
     }
 
+    /** ths same date string, different in each zone */
     private static void wrong2() throws ParseException {
         System.out.println("wrong2");
         String stringDate = "2020-01-02 22:00:00";
@@ -48,6 +54,7 @@ public class CommonMistakesApplication {
         System.out.println(new SimpleDateFormat("[yyyy-MM-dd HH:mm:ss Z]").format(date));
     }
 
+    /** right result to use Zone */
     private static void right() {
         System.out.println("right");
 
@@ -60,9 +67,9 @@ public class CommonMistakesApplication {
         ZonedDateTime date = ZonedDateTime.of(LocalDateTime.parse(stringDate, dateTimeFormatter), timeZoneJST);
 
         DateTimeFormatter outputFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss Z");
-        System.out.println(timeZoneSH.getId() + outputFormat.withZone(timeZoneSH).format(date));
-        System.out.println(timeZoneNY.getId() + outputFormat.withZone(timeZoneNY).format(date));
-        System.out.println(timeZoneJST.getId() + outputFormat.withZone(timeZoneJST).format(date));
+        System.out.println(timeZoneSH.getId() + ": " + outputFormat.withZone(timeZoneSH).format(date));
+        System.out.println(timeZoneNY.getId() + ": " + outputFormat.withZone(timeZoneNY).format(date));
+        System.out.println(timeZoneJST.getId() + ": " + outputFormat.withZone(timeZoneJST).format(date));
     }
 
 }

@@ -15,7 +15,9 @@
         <module name="tx" />
         <module name="concurrent-hashmap" />
         <module name="io" />
+        <module name="advanced-feature" />
         <module name="lst" />
+        <module name="oom" />
         <module name="equal" />
         <module name="serialization" />
         <module name="numerical" />
@@ -23,6 +25,7 @@
         <module name="copy-on-write-array-list" />
         <module name="util" />
         <module name="connection-pool" />
+        <module name="spring-part1" />
         <module name="lock" />
         <module name="http" />
         <module name="logging" />
@@ -30,6 +33,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aaa" target="1.8" />
+      <module name="advanced-feature" target="1.8" />
       <module name="concurrent-hashmap" target="1.8" />
       <module name="connection-pool" target="1.8" />
       <module name="copy-on-write-array-list" target="1.8" />
@@ -46,8 +50,10 @@
       <module name="lst" target="1.8" />
       <module name="nullvalue" target="1.8" />
       <module name="numerical" target="1.8" />
+      <module name="oom" target="1.8" />
       <module name="ProgramPit" target="1.8" />
       <module name="serialization" target="1.8" />
+      <module name="spring-part1" target="1.8" />
       <module name="thread-local" target="1.8" />
       <module name="tx" target="1.8" />
       <module name="untitled" target="1.8" />
@@ -57,6 +63,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aaa" options="-parameters" />
+      <module name="advanced-feature" options="-parameters" />
       <module name="concurrent-hashmap" options="-parameters" />
       <module name="connection-pool" options="-parameters" />
       <module name="copy-on-write-array-list" options="-parameters" />
@@ -73,7 +80,9 @@
       <module name="lst" options="-parameters" />
       <module name="nullvalue" options="-parameters" />
       <module name="numerical" options="-parameters" />
+      <module name="oom" options="-parameters" />
       <module name="serialization" options="-parameters" />
+      <module name="spring-part1" options="-parameters" />
       <module name="thread-local" options="-parameters" />
       <module name="tx" options="-parameters" />
       <module name="untitled" options="-parameters" />

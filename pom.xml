@@ -33,6 +33,9 @@
         <module>serialization</module>
         <module>datetime</module>
         <module>aaa</module>
+        <module>oom</module>
+        <module>advanced-feature</module>
+        <module>spring-part1</module>
     </modules>
 
     <dependencies>

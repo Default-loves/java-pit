@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ProgramPit.iml" filepath="$PROJECT_DIR$/.idea/ProgramPit.iml" />
       <module fileurl="file://$PROJECT_DIR$/aaa/aaa.iml" filepath="$PROJECT_DIR$/aaa/aaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/advanced-feature/advanced-feature.iml" filepath="$PROJECT_DIR$/advanced-feature/advanced-feature.iml" />
       <module fileurl="file://$PROJECT_DIR$/concurrent-hashmap/concurrent-hashmap.iml" filepath="$PROJECT_DIR$/concurrent-hashmap/concurrent-hashmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/connection-pool/connection-pool.iml" filepath="$PROJECT_DIR$/connection-pool/connection-pool.iml" />
       <module fileurl="file://$PROJECT_DIR$/copy-on-write-array-list/copy-on-write-array-list.iml" filepath="$PROJECT_DIR$/copy-on-write-array-list/copy-on-write-array-list.iml" />
@@ -18,7 +19,9 @@
       <module fileurl="file://$PROJECT_DIR$/lst/lst.iml" filepath="$PROJECT_DIR$/lst/lst.iml" />
       <module fileurl="file://$PROJECT_DIR$/nullvalue/nullvalue.iml" filepath="$PROJECT_DIR$/nullvalue/nullvalue.iml" />
       <module fileurl="file://$PROJECT_DIR$/numerical/numerical.iml" filepath="$PROJECT_DIR$/numerical/numerical.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oom/oom.iml" filepath="$PROJECT_DIR$/oom/oom.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-part1/spring-part1.iml" filepath="$PROJECT_DIR$/spring-part1/spring-part1.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread-local/thread-local.iml" filepath="$PROJECT_DIR$/thread-local/thread-local.iml" />
       <module fileurl="file://$PROJECT_DIR$/tx/tx.iml" filepath="$PROJECT_DIR$/tx/tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />

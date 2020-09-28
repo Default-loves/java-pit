@@ -36,6 +36,7 @@
         <module>oom</module>
         <module>advanced-feature</module>
         <module>spring-part1</module>
+        <module>spring-part2</module>
     </modules>
 
     <dependencies>

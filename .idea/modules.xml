@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/oom/oom.iml" filepath="$PROJECT_DIR$/oom/oom.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-part1/spring-part1.iml" filepath="$PROJECT_DIR$/spring-part1/spring-part1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-part2/spring-part2.iml" filepath="$PROJECT_DIR$/spring-part2/spring-part2.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread-local/thread-local.iml" filepath="$PROJECT_DIR$/thread-local/thread-local.iml" />
       <module fileurl="file://$PROJECT_DIR$/tx/tx.iml" filepath="$PROJECT_DIR$/tx/tx.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />

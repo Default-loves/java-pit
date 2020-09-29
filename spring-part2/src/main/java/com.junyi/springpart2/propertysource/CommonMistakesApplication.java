@@ -9,6 +9,9 @@ import org.springframework.core.env.StandardEnvironment;
 import javax.annotation.PostConstruct;
 import java.util.Arrays;
 
+/**
+ * Spring already have many Properties, and they may be use first
+ */
 @SpringBootApplication
 @Slf4j
 public class CommonMistakesApplication {

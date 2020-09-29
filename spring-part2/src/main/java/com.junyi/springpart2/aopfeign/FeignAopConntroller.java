@@ -11,8 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 调用 Client 后 AOP 有日志输出，调用 ClientWithUrl 后却没有
- * 原因是，定义了 FeignClient 的 URL 属性后，我们获取的是 LoadBalancerFeignClient 的 delegate ApacheHttpClient，ApacheHttpClient是 new 出来的，不是 Bean
- * 而Spring 只能切入由自己管理的 Bean。
+ * 原因是，定义了 FeignClient 的 URL 属性后，我们获取的是 LoadBalancerFeignClient 的 delegate ApacheHttpClient，
+ * ApacheHttpClient是 new 出来的，不是 Bean
+ * 而 Spring 只能切入由自己管理的 Bean。
+ *
+ * 解决办法：
+ * 查看HttpClientFeignConfiguration，发现当没有 ILoadBalancer 类型的时候，自动装配会把 ApacheHttpClient 设置为 Bean。
  */
 @Slf4j
 @RequestMapping("feignaop")

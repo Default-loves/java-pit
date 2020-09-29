@@ -25,7 +25,8 @@ import java.util.stream.Stream;
 import static java.util.stream.Collectors.toMap;
 
 /**
- * "HIGHEST_PRECEDENCE" in order to handle exception after transaction, so that transaction can rollback when Exception(transaction also use AOP)
+ * "HIGHEST_PRECEDENCE" make this Aspect handle exception after transaction,
+ * so that transaction can rollback when Exception(transaction also use AOP)
  */
 @Aspect
 @Component

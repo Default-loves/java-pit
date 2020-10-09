@@ -35,7 +35,6 @@ public class aaa {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        log.info(JSONUtil.toJson())
     }
     public static void main(String[] args) throws Exception {
 

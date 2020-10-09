@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/nullvalue/nullvalue.iml" filepath="$PROJECT_DIR$/nullvalue/nullvalue.iml" />
       <module fileurl="file://$PROJECT_DIR$/numerical/numerical.iml" filepath="$PROJECT_DIR$/numerical/numerical.iml" />
       <module fileurl="file://$PROJECT_DIR$/oom/oom.iml" filepath="$PROJECT_DIR$/oom/oom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design/production/production.iml" filepath="$PROJECT_DIR$/design/production/production.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-part1/spring-part1.iml" filepath="$PROJECT_DIR$/spring-part1/spring-part1.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-part2/spring-part2.iml" filepath="$PROJECT_DIR$/spring-part2/spring-part2.iml" />

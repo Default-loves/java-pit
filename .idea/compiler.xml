@@ -13,6 +13,7 @@
         <module name="thread-local" />
         <module name="executor-pool" />
         <module name="tx" />
+        <module name="production" />
         <module name="concurrent-hashmap" />
         <module name="io" />
         <module name="advanced-feature" />
@@ -52,6 +53,7 @@
       <module name="nullvalue" target="1.8" />
       <module name="numerical" target="1.8" />
       <module name="oom" target="1.8" />
+      <module name="production" target="1.8" />
       <module name="ProgramPit" target="1.8" />
       <module name="serialization" target="1.8" />
       <module name="spring-part1" target="1.8" />
@@ -83,6 +85,7 @@
       <module name="nullvalue" options="-parameters" />
       <module name="numerical" options="-parameters" />
       <module name="oom" options="-parameters" />
+      <module name="production" options="-parameters" />
       <module name="serialization" options="-parameters" />
       <module name="spring-part1" options="-parameters" />
       <module name="spring-part2" options="-parameters" />

@@ -37,9 +37,14 @@
         <module>advanced-feature</module>
         <module>spring-part1</module>
         <module>spring-part2</module>
+        <module>production</module>
     </modules>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>

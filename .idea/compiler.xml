@@ -7,27 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="nullvalue" />
         <module name="exception" />
         <module name="aaa" />
-        <module name="thread-local" />
-        <module name="executor-pool" />
         <module name="tx" />
         <module name="production" />
-        <module name="concurrent-hashmap" />
-        <module name="io" />
         <module name="advanced-feature" />
         <module name="lst" />
         <module name="oom" />
-        <module name="equal" />
-        <module name="serialization" />
         <module name="numerical" />
         <module name="datetime" />
+        <module name="lock" />
+        <module name="nullvalue" />
+        <module name="thread-local" />
+        <module name="executor-pool" />
+        <module name="concurrent-hashmap" />
+        <module name="io" />
+        <module name="equal" />
+        <module name="serialization" />
         <module name="copy-on-write-array-list" />
         <module name="util" />
         <module name="connection-pool" />
         <module name="spring-part1" />
-        <module name="lock" />
+        <module name="asyncprocess" />
         <module name="http" />
         <module name="logging" />
         <module name="spring-part2" />
@@ -36,6 +37,7 @@
     <bytecodeTargetLevel>
       <module name="aaa" target="1.8" />
       <module name="advanced-feature" target="1.8" />
+      <module name="asyncprocess" target="1.8" />
       <module name="concurrent-hashmap" target="1.8" />
       <module name="connection-pool" target="1.8" />
       <module name="copy-on-write-array-list" target="1.8" />
@@ -68,6 +70,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aaa" options="-parameters" />
       <module name="advanced-feature" options="-parameters" />
+      <module name="asyncprocess" options="-parameters" />
       <module name="concurrent-hashmap" options="-parameters" />
       <module name="connection-pool" options="-parameters" />
       <module name="copy-on-write-array-list" options="-parameters" />

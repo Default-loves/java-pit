@@ -38,6 +38,7 @@
         <module>spring-part1</module>
         <module>spring-part2</module>
         <module>production</module>
+        <module>asyncprocess</module>
     </modules>
 
     <dependencies>

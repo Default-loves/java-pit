@@ -7,39 +7,34 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="exception" />
-        <module name="aaa" />
-        <module name="tx" />
-        <module name="production" />
-        <module name="advanced-feature" />
-        <module name="lst" />
-        <module name="oom" />
-        <module name="numerical" />
-        <module name="datetime" />
-        <module name="lock" />
-        <module name="nullvalue" />
-        <module name="thread-local" />
-        <module name="executor-pool" />
-        <module name="concurrent-hashmap" />
         <module name="io" />
-        <module name="nosql" />
-        <module name="equal" />
-        <module name="serialization" />
-        <module name="copy-on-write-array-list" />
-        <module name="util" />
+        <module name="advanced-feature" />
         <module name="client-data-truth" />
+        <module name="thread-local" />
+        <module name="production" />
+        <module name="oom" />
+        <module name="util" />
         <module name="connection-pool" />
-        <module name="spring-part1" />
         <module name="asyncprocess" />
-        <module name="http" />
         <module name="logging" />
+        <module name="nullvalue" />
+        <module name="numerical" />
         <module name="spring-part2" />
-      </profile>
-      <profile name="Annotation profile for program-pit" enabled="true">
-        <sourceOutputDir name="../../money-relative/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../money-relative/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
+        <module name="datetime" />
+        <module name="nosql" />
+        <module name="tx" />
+        <module name="copy-on-write-array-list" />
+        <module name="concurrent-hashmap" />
+        <module name="lock" />
+        <module name="serialization" />
+        <module name="aaa" />
+        <module name="spring-part1" />
         <module name="money-relative" />
+        <module name="http" />
+        <module name="executor-pool" />
+        <module name="equal" />
+        <module name="lst" />
+        <module name="exception" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

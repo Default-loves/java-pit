@@ -5,6 +5,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.math.BigDecimal;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * 在真实的生产级代码中，一定是根据 CouponBatch 在数据库中插入一定量的 Coupon 记录，每一个优惠券都有唯一的 ID，可跟踪、可注销。
+ */
 @Slf4j
 public class CouponCenter {
 
@@ -33,12 +36,13 @@ public class CouponCenter {
     }
 
     public CouponBatch generateCouponBatch() {
-        CouponBatch couponBatch = new CouponBatch();
-        couponBatch.setAmount(new BigDecimal("100"));
-        couponBatch.setId(1L);
-        couponBatch.setTotalCount(new AtomicInteger(100));
-        couponBatch.setRemainCount(couponBatch.getTotalCount());
-        couponBatch.setReason("XXX活动");
+        CouponBatch couponBatch = CouponBatch.builder()
+                .amount(new BigDecimal("100"))
+                .id(1L)
+                .totalCount(new AtomicInteger(100))
+                .remainCount(new AtomicInteger(100))
+                .reason("a party")
+                .build();
         return couponBatch;
     }
 }

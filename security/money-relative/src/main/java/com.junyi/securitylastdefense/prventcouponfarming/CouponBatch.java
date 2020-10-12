@@ -1,11 +1,16 @@
 package com.junyi.securitylastdefense.prventcouponfarming;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * coupon batch with totalCount coupon
+ */
 @Data
+@Builder
 public class CouponBatch {
     private long id;
     private AtomicInteger totalCount;

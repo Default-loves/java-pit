@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/aaa/pom.xml" />
         <option value="$PROJECT_DIR$/design/production/pom.xml" />
         <option value="$PROJECT_DIR$/design/asyncprocess/pom.xml" />
+        <option value="$PROJECT_DIR$/design/nosql/pom.xml" />
+        <option value="$PROJECT_DIR$/security/client-data-truth/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

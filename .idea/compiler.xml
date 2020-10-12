@@ -22,10 +22,12 @@
         <module name="executor-pool" />
         <module name="concurrent-hashmap" />
         <module name="io" />
+        <module name="nosql" />
         <module name="equal" />
         <module name="serialization" />
         <module name="copy-on-write-array-list" />
         <module name="util" />
+        <module name="client-data-truth" />
         <module name="connection-pool" />
         <module name="spring-part1" />
         <module name="asyncprocess" />
@@ -33,11 +35,18 @@
         <module name="logging" />
         <module name="spring-part2" />
       </profile>
+      <profile name="Annotation profile for program-pit" enabled="true">
+        <sourceOutputDir name="../../money-relative/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../money-relative/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="money-relative" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aaa" target="1.8" />
       <module name="advanced-feature" target="1.8" />
       <module name="asyncprocess" target="1.8" />
+      <module name="client-data-truth" target="1.8" />
       <module name="concurrent-hashmap" target="1.8" />
       <module name="connection-pool" target="1.8" />
       <module name="copy-on-write-array-list" target="1.8" />
@@ -52,11 +61,14 @@
       <module name="lock" target="1.8" />
       <module name="logging" target="1.8" />
       <module name="lst" target="1.8" />
+      <module name="money-relative" target="1.8" />
+      <module name="nosql" target="1.8" />
       <module name="nullvalue" target="1.8" />
       <module name="numerical" target="1.8" />
       <module name="oom" target="1.8" />
       <module name="production" target="1.8" />
       <module name="ProgramPit" target="1.8" />
+      <module name="security" target="1.8" />
       <module name="serialization" target="1.8" />
       <module name="spring-part1" target="1.8" />
       <module name="spring-part2" target="1.8" />
@@ -71,6 +83,7 @@
       <module name="aaa" options="-parameters" />
       <module name="advanced-feature" options="-parameters" />
       <module name="asyncprocess" options="-parameters" />
+      <module name="client-data-truth" options="-parameters" />
       <module name="concurrent-hashmap" options="-parameters" />
       <module name="connection-pool" options="-parameters" />
       <module name="copy-on-write-array-list" options="-parameters" />
@@ -85,10 +98,13 @@
       <module name="lock" options="-parameters" />
       <module name="logging" options="-parameters" />
       <module name="lst" options="-parameters" />
+      <module name="money-relative" options="-parameters" />
+      <module name="nosql" options="-parameters" />
       <module name="nullvalue" options="-parameters" />
       <module name="numerical" options="-parameters" />
       <module name="oom" options="-parameters" />
       <module name="production" options="-parameters" />
+      <module name="security" options="-parameters" />
       <module name="serialization" options="-parameters" />
       <module name="spring-part1" options="-parameters" />
       <module name="spring-part2" options="-parameters" />

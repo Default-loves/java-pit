@@ -7,34 +7,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="io" />
-        <module name="advanced-feature" />
-        <module name="client-data-truth" />
-        <module name="thread-local" />
+        <module name="aaa" />
+        <module name="exception" />
+        <module name="tx" />
         <module name="production" />
+        <module name="advanced-feature" />
         <module name="oom" />
+        <module name="lst" />
+        <module name="numerical" />
+        <module name="datetime" />
+        <module name="lock" />
+        <module name="nullvalue" />
+        <module name="data-and-code" />
+        <module name="thread-local" />
+        <module name="executor-pool" />
+        <module name="io" />
+        <module name="concurrent-hashmap" />
+        <module name="nosql" />
+        <module name="serialization" />
+        <module name="equal" />
+        <module name="client-data-truth" />
         <module name="util" />
+        <module name="copy-on-write-array-list" />
         <module name="connection-pool" />
         <module name="asyncprocess" />
-        <module name="logging" />
-        <module name="nullvalue" />
-        <module name="numerical" />
-        <module name="spring-part2" />
-        <module name="datetime" />
-        <module name="nosql" />
-        <module name="tx" />
-        <module name="copy-on-write-array-list" />
-        <module name="concurrent-hashmap" />
-        <module name="lock" />
-        <module name="serialization" />
-        <module name="aaa" />
         <module name="spring-part1" />
+        <module name="logging" />
+        <module name="spring-part2" />
         <module name="money-relative" />
         <module name="http" />
-        <module name="executor-pool" />
-        <module name="equal" />
-        <module name="lst" />
-        <module name="exception" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -45,6 +46,7 @@
       <module name="concurrent-hashmap" target="1.8" />
       <module name="connection-pool" target="1.8" />
       <module name="copy-on-write-array-list" target="1.8" />
+      <module name="data-and-code" target="1.8" />
       <module name="datetime" target="1.8" />
       <module name="equal" target="1.8" />
       <module name="exception" target="1.8" />
@@ -82,6 +84,7 @@
       <module name="concurrent-hashmap" options="-parameters" />
       <module name="connection-pool" options="-parameters" />
       <module name="copy-on-write-array-list" options="-parameters" />
+      <module name="data-and-code" options="-parameters" />
       <module name="datetime" options="-parameters" />
       <module name="equal" options="-parameters" />
       <module name="exception" options="-parameters" />

@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * coupon batch with totalCount coupon
+ * coupon batch with specific number coupons
  */
 @Data
 @Builder

@@ -43,6 +43,7 @@
         <module>client-data-truth</module>
         <module>security</module>
         <module>money-relative</module>
+        <module>data-and-code</module>
     </modules>
 
     <dependencies>
@@ -74,6 +75,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>

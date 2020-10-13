@@ -1,10 +1,12 @@
 package com.junyi;
 
 import lombok.extern.slf4j.Slf4j;
+import org.reflections.Reflections;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -36,6 +38,16 @@ public class aaa {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 获取接口对应的实现类
+     */
+    @SuppressWarnings("unchecked")
+    public static Set<Class<?>> getSubClass(String packageName, Class<?> interfaceClass) {
+        Reflections reflections = new Reflections(packageName);
+        return reflections.getSubTypesOf((Class<Object>) interfaceClass);
+    }
+
     public static void main(String[] args) throws Exception {
 
             // create user object

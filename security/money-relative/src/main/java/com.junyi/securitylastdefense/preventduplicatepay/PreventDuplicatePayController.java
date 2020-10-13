@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.math.BigDecimal;
 import java.util.UUID;
 
+/**
+ * 从一开始就需要先有业务订单产生，然后使用相同的业务订单号一直贯穿到最后的资金通路，才能真正避免重复资金操作。
+ */
 @Slf4j
 @RequestMapping("preventduplicatepay")
 @RestController

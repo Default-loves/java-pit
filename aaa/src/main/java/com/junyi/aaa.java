@@ -18,88 +18,16 @@ import java.util.concurrent.ConcurrentHashMap;
 @Slf4j
 public class aaa {
 
-    private static final Map<String, Object> map = new HashMap<>();
-    static {
-        map.put("id", "123");
-        map.put("name", "apple");
+    public static void main(String[] args) {
+        Integer a = null;
+        boolean b = false;
+        System.out.println(b ? 1: a);
     }
 
-    private <T> void test1(Class<T> tClass) {
-        T target;
-        try {
-            Object object = tClass.newInstance();
-            target = (T) object;
-            Field field = target.getClass().getDeclaredField("id");
-            field.setAccessible(true);
-            field.set(target, map.get("id"));
-        } catch (InstantiationException | NoSuchFieldException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-    }
 
-    /**
-     * 获取接口对应的实现类
-     */
-    @SuppressWarnings("unchecked")
-    public static Set<Class<?>> getSubClass(String packageName, Class<?> interfaceClass) {
-        Reflections reflections = new Reflections(packageName);
-        return reflections.getSubTypesOf((Class<Object>) interfaceClass);
-    }
+}
 
-    public static void main(String[] args) throws Exception {
 
-            // create user object
-            Employee emp = new Employee();
-
-            // print value of uniqueNo
-            System.out.println(
-                    "Value of uniqueNo before "
-                            + "applying set is "
-                            + emp.uniqueNo);
-
-            // Get the field object
-            Field field
-                    = Employee.class
-                    .getField("uniqueNo");
-
-            // Apply set Method
-            field.set(emp, (short)1213);
-
-            // print value of uniqueNo
-            System.out.println(
-                    "Value of uniqueNo after "
-                            + "applying set is "
-                            + emp.uniqueNo);
-
-            // print value of salary
-            System.out.println(
-                    "Value of salary before "
-                            + "applying set is "
-                            + emp.salary);
-
-            // Get the field object
-            field = Employee.class.getField("salary");
-
-            // Apply set Method
-            field.set(emp, 324344.2323);
-
-            // print value of salary
-            System.out.println(
-                    "Value of salary after "
-                            + "applying set is "
-                            + emp.salary);
-        }
-    }
-
-    // sample class
-    class Employee {
-
-        // static values
-        public static short uniqueNo = 239;
-        public static double salary = 121324.13333;
-    }
 
 
 

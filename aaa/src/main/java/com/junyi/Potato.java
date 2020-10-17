@@ -13,8 +13,8 @@ import java.time.LocalTime;
 public class Potato {
     public static void main(String[] args) throws IOException, InterruptedException {
         LocalTime now = LocalTime.now();
-//        LocalTime after = now.plusMinutes(33);
-        LocalTime after = now.plusSeconds(5);
+        LocalTime after = now.plusMinutes(33);
+//        LocalTime after = now.plusSeconds(5);
         while (true) {
             try {
                 Thread.sleep(1000);

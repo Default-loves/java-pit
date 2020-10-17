@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.reflections.Reflections;
 
 import java.lang.reflect.Field;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -19,9 +20,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class aaa {
 
     public static void main(String[] args) {
-        Integer a = null;
-        boolean b = false;
-        System.out.println(b ? 1: a);
+        String s = "小";
+        String pattern = ".*" + s + "*";
+        boolean matches = "大车场".matches(pattern);
+        System.out.println(matches);
     }
 
 

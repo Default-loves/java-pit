@@ -1,6 +1,7 @@
 package com.junyi.nosqluse.esvsmyql;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.elasticsearch.action.update.UpdateRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
@@ -44,6 +45,7 @@ public class PerformanceController {
                    @RequestParam(value = "keyword1", defaultValue = "社会") String keyword1,
                    @RequestParam(value = "keyword2", defaultValue = "苹果") String keyword2) {
         long begin = System.currentTimeMillis();
+        StringUtils.rightPad()
         Object result = newsESRepository.countByCateidAndContentContainingAndContentContaining(cateid, keyword1, keyword2);
         log.info("took {} ms result {}", System.currentTimeMillis() - begin, result);
     }

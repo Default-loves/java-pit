@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aaa" />
         <module name="exception" />
+        <module name="sensitive-data" />
         <module name="tx" />
         <module name="production" />
         <module name="advanced-feature" />
+        <module name="money-relative (1)" />
         <module name="oom" />
         <module name="lst" />
         <module name="numerical" />
@@ -59,6 +61,7 @@
       <module name="logging" target="1.8" />
       <module name="lst" target="1.8" />
       <module name="money-relative" target="1.8" />
+      <module name="money-relative (1)" target="1.8" />
       <module name="nosql" target="1.8" />
       <module name="nullvalue" target="1.8" />
       <module name="numerical" target="1.8" />
@@ -66,6 +69,7 @@
       <module name="production" target="1.8" />
       <module name="ProgramPit" target="1.8" />
       <module name="security" target="1.8" />
+      <module name="sensitive-data" target="1.8" />
       <module name="serialization" target="1.8" />
       <module name="spring-part1" target="1.8" />
       <module name="spring-part2" target="1.8" />
@@ -103,6 +107,7 @@
       <module name="oom" options="-parameters" />
       <module name="production" options="-parameters" />
       <module name="security" options="-parameters" />
+      <module name="sensitive-data" options="-parameters" />
       <module name="serialization" options="-parameters" />
       <module name="spring-part1" options="-parameters" />
       <module name="spring-part2" options="-parameters" />

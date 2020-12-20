@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/security/client-data-truth/pom.xml" />
         <option value="$PROJECT_DIR$/security/money-relative/pom.xml" />
         <option value="$PROJECT_DIR$/security/data-and-code/pom.xml" />
+        <option value="$PROJECT_DIR$/security/sensitive-data/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -21,12 +21,14 @@
       <module fileurl="file://$PROJECT_DIR$/logging/logging.iml" filepath="$PROJECT_DIR$/logging/logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/lst/lst.iml" filepath="$PROJECT_DIR$/lst/lst.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/money-relative/money-relative.iml" filepath="$PROJECT_DIR$/security/money-relative/money-relative.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/sensitive-data/money-relative (1).iml" filepath="$PROJECT_DIR$/security/sensitive-data/money-relative (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/design/nosql/nosql.iml" filepath="$PROJECT_DIR$/design/nosql/nosql.iml" />
       <module fileurl="file://$PROJECT_DIR$/nullvalue/nullvalue.iml" filepath="$PROJECT_DIR$/nullvalue/nullvalue.iml" />
       <module fileurl="file://$PROJECT_DIR$/numerical/numerical.iml" filepath="$PROJECT_DIR$/numerical/numerical.iml" />
       <module fileurl="file://$PROJECT_DIR$/oom/oom.iml" filepath="$PROJECT_DIR$/oom/oom.iml" />
       <module fileurl="file://$PROJECT_DIR$/design/production/production.iml" filepath="$PROJECT_DIR$/design/production/production.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/sensitive-data/sensitive-data.iml" filepath="$PROJECT_DIR$/security/sensitive-data/sensitive-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-part1/spring-part1.iml" filepath="$PROJECT_DIR$/spring-part1/spring-part1.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-part2/spring-part2.iml" filepath="$PROJECT_DIR$/spring-part2/spring-part2.iml" />

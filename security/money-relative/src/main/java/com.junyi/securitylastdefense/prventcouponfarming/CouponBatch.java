@@ -17,4 +17,5 @@ public class CouponBatch {
     private AtomicInteger remainCount;
     private BigDecimal amount;
     private String reason;
+
 }

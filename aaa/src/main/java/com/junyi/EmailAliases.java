@@ -21,6 +21,8 @@ public class EmailAliases {
     }
 
     public void printKeys() {
+        String s = Double.toString(1.1d);
+
         log.info("Mail keys:%n");
         for (String k : aliases)
             log.info("{}", k);
